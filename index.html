@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang = 'pt-BR'>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Meu site de apresentação.</title>
+        <style>
+            body{
+               background-color: black;
+            }
+            h1{
+                text-align: center;
+                color: aqua;
+                font-family:'Papyrus'
+            }
+            p{
+                text-align: center;
+                text-shadow: 1px 1px 0 rgb(0, 0, 0);
+                color: white;
+                font-size: 0.62cm;
+                font-family:'Arial'
+            }
+            .gif{
+                text-align:center
+            }
+            .audiocon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            var name = window.prompt('Olá! Me diga o seu nome: ')
+            document.write("<h1 id='welcome'> Seja bem vindo(a), "+ name + "! </h1>")
+            document.getElementById('welcome').style.textAlign = "center"
+        </script>
+        <div>
+            <figure class = 'gif'>
+            <img src="laingif.gif">
+            </figure>
+        </div>
+        
+        <p>Me chamo Luca Poe, tenho 15 anos e cresci na cidade de Peruíbe. 
+            Estou estudando Python e JavaScript, meu objetivo é ser um
+            programador. No momento também estou estudando Lógica Clássica e Filosofia.
+        </p> 
+        <p> 
+            Sou introvertido, mas não tímido. Estou sempre procurando desenvolver as minhas habilidades ao máximo.
+        </p>
+       <h1> Clique <a href='http://tamanduafoda.infinityfreeapp.com/tabela.html'>aqui</a> para ver as tabelas.</h1>
+
+        <div>
+            <figure class = 'gif'>
+            <img src="https://poemese.vteximg.com.br/arquivos/ids/166141/S%C3%B3crates%20215px.png?v=637025289259830000" style="margin: 1.75%; width: 300; height: 300;" /><img src="https://poemese.vteximg.com.br/arquivos/ids/165972/Ren%C3%A9%20Descartes%20215px.png?v=637007132348600000" style="margin: 1.75%; width: 300; height: 300;" /> <img src="http://tamanduafoda.infinityfreeapp.com/kant.png" style="margin: 1.75%; width: 300; height: 300;" /><img src="http://tamanduafoda.infinityfreeapp.com/hayek1.png" style="margin: 1.75%; width: 300; height: 300;" />
+            </figure>
+        </div>
+        <h1>Curiosidades: 
+            <p> - Nasci no mesmo dia que o autor Edgar Allan Poe, por isso tenho esse nome.</p>
+            <p> - O gif na parte superior do site é da personagem Lain Iwakura.</p>
+            <p> - Eu invisto na IBOVESPA.</p>
+            <p> - Já tive um canal de tutoriais no YouTube, aos meus dez anos. Em algum momento esse canal começou a dar certo e meus vídeos chegaram a bater 40k de views. Meu notebook queimou quando o canal deu certo.</p>
+            <p> - Meus músicos favoritos são os Beatles, porém, minha música favorita é Stairway to Heaven do Led Zeppelin.</p>
+            <p> - Sei tocar dois instrumentos.</p>
+            <p> - Ano passado fiquei 6 meses seguidos sem sair de casa.</p>
+        </h1>
+
+        <h1> Tecnologias/Linguagens que quero aprender! </h1>
+        <p id='tec'> Python, C#, PHP, JavaScript, NodeJS, React, MySQL. <p>
+        <h1 id='fs'> Ué, pra que serve isso aqui?
+        </h1>
+        <div>
+            <figure class = 'gif'>
+                <img src = 'friend20th.png'>
+            </figure>
+        </div>
+        <script>
+            var fs = window.document.getElementById('fs')
+            fs.style.color = 'Indigo'
+            fs.style.background = 'hotpink'
+            fs.addEventListener('click', clicar)
+            fs.addEventListener('mouseenter', entrar)
+            fs.addEventListener('mouseout', sair)
+            var t = window.document.querySelector('p#tec')
+            t.style.textAlign = "center";
+            t.style.background = 'hotpink'
+            t.style.color = 'Indigo'
+
+            function clicar(){
+                fs.innerText = 'Afinal, é melhor ser temido ou ser amado?'
+                fs.style.background = 'black'
+            }
+            function entrar(){
+                fs.innerText = 'Que tal tentar clicar?'
+                fs.style.background = 'hotpink'
+            }
+            function sair(){
+                fs.innerText = 'Ué, pra que serve isso aqui?'
+                fs.style.background = 'hotpink'
+            }
+
+        </script>
+    </body>
+</html>
